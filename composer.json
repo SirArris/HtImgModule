@@ -18,25 +18,17 @@
     ],
     "require": {
         "php": "^5.6 || ^7.0",
-        "zendframework/zend-mvc": "^2.7.10 || ^3.0",
-        "zendframework/zend-servicemanager": "^2.7.6 || ^3.1",
-        "zendframework/zend-modulemanager": "^2.6",
-        "zendframework/zend-stdlib": "^2.7 || ^3.0",
-        "zendframework/zend-http": "^2.5",
-        "zendframework/zend-eventmanager": "^2.7 || ^3.0",
-        "imagine/Imagine": "^0.7.1",
-        "symfony/http-foundation": "~3.4"
+        "laminas/laminas-mvc": "^3.0",
+        "laminas/laminas-servicemanager": "^3.1",
+        "laminas/laminas-modulemanager": "^2.6",
+        "laminas/laminas-stdlib": "^3.0",
+        "laminas/laminas-http": "^2.5",
+        "laminas/laminas-eventmanager": "^3.0",
+        "imagine/Imagine": "^1.0",
+        "symfony/http-foundation": "^5.0"
     },
     "require-dev": {
-        "ext-gd": "*",
-        "zendframework/zend-escaper": "^2.2",
-        "zendframework/zend-view": "^2.7",
-        "zendframework/zend-filter": "^2.5",
-        "league/flysystem": "0.4.*",
-        "knplabs/gaufrette":"^0.1.9",
-        "phpunit/phpunit": "^5.7",
-        "doctrine/instantiator": "1.0.5",
-        "phine/test": "1.*"
+      
     },
     "suggest": {
         "league/flysystem": "To use this library to load image",
