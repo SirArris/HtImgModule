@@ -18,15 +18,8 @@
     ],
     "require": {
     
-        "php": "^5.6 || ^7.0",
-        "zendframework/zend-mvc": "*",
-        "zendframework/zend-servicemanager": "*",
-        "zendframework/zend-modulemanager": "*",
-        "zendframework/zend-stdlib": "*",
-        "zendframework/zend-http": "*",
-        "zendframework/zend-eventmanager": "*",
-        "imagine/Imagine": "*",
-        "symfony/http-foundation": "*"
+        "php": "^5.6 || ^7.0"
+
     },
     "suggest": {
         "league/flysystem": "To use this library to load image",
