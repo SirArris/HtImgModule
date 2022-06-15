@@ -1,7 +1,7 @@
 <?php
 namespace HtImgModuleTest\Factory\Imagine\Loader;
 
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use HtImgModule\Factory\Imagine\Loader\SimpleFileSystemLoaderFactory;    
 
 class SimpleFileSystemLoaderFactoryTest extends \PHPUnit_Framework_TestCase

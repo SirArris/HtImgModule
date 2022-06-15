@@ -3,7 +3,7 @@
 namespace HtImgModuleTest\Factory;
 
 use HtImgModule\Factory\RelativePathResolverFactory;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use HtImgModule\Options\ModuleOptions;
 use HtImgModule\Imagine\Resolver\ResolverManager;
 
@@ -21,7 +21,7 @@ class RelativePathResolverFactoryTest extends \PHPUnit_Framework_TestCase
             ->getMock();
         $resolverManager->expects($this->once())
             ->method('get')
-            ->will($this->returnValue($this->createMock('Zend\View\Resolver\ResolverInterface')));
+            ->will($this->returnValue($this->createMock('Laminas\View\Resolver\ResolverInterface')));
         $serviceManager->setService('HtImgModule\Imagine\Resolver\ResolverManager', $resolverManager);
         $factory = new RelativePathResolverFactory();
         $this->assertInstanceOf('HtImgModule\Imagine\Resolver\AggregateResolver', $factory->createService($serviceManager));

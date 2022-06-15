@@ -1,7 +1,7 @@
 <?php
 namespace HtImgModule\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\Controller\AbstractActionController;
 use HtImgModule\Service\ImageServiceInterface;
 use HtImgModule\View\Model\ImageModel;
 use HtImgModule\Exception;

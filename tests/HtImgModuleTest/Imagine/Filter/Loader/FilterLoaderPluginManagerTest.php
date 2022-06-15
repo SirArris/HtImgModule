@@ -2,7 +2,7 @@
 namespace HtImgModuleTest\Imagine\Filter\Loader;
 
 use HtImgModule\Imagine\Filter\Loader\FilterLoaderPluginManager;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 class FilterLoaderPluginManagerTest extends \PHPUnit_Framework_TestCase
 {

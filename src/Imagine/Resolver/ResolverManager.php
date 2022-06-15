@@ -3,9 +3,9 @@ namespace HtImgModule\Imagine\Resolver;
 
 use HtImgModule\Imagine\Resolver\Factory\ImageMapResolverFactory;
 use HtImgModule\Imagine\Resolver\Factory\ImagePathStackResolverFactory;
-use Zend\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\AbstractPluginManager;
 use HtImgModule\Exception;
-use Zend\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
 
 class ResolverManager extends AbstractPluginManager
 {

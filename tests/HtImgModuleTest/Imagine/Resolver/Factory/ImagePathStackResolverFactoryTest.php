@@ -2,7 +2,7 @@
 namespace HtImgModuleTest\Imagine\Resolver\Factory;
 
 use HtImgModule\Imagine\Resolver\Factory\ImagePathStackResolverFactory;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use HtImgModule\Options\ModuleOptions;
 
 class ImagePathStackResolverFactoryTest extends \PHPUnit_Framework_TestCase

@@ -28,8 +28,8 @@ class ImgUrlTest extends \PHPUnit_Framework_TestCase
             $filterManager,
             $loaderManager
         );
-        $urlHelper = $this->createMock('Zend\View\Helper\Url');
-        $renderer = $this->createMock('Zend\View\Renderer\PhpRenderer');
+        $urlHelper = $this->createMock('Laminas\View\Helper\Url');
+        $renderer = $this->createMock('Laminas\View\Renderer\PhpRenderer');
         $renderer->expects($this->once())
             ->method('plugin')
             ->with('url')
@@ -68,7 +68,7 @@ class ImgUrlTest extends \PHPUnit_Framework_TestCase
             $filterManager,
             $loaderManager
         );
-        $renderer = $this->createMock('Zend\View\Renderer\PhpRenderer');
+        $renderer = $this->createMock('Laminas\View\Renderer\PhpRenderer');
         $renderer->expects($this->once())
             ->method('plugin')
             ->with('basePath')

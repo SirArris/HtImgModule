@@ -9,7 +9,7 @@ From your controller,
 ```php
 namespace Applicaton\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
+use Laminas\Mvc\Controller\AbstractActionController;
 use HtImgModule\View\Model\ImageModel;
 
 class MyController extends AbstractActionController

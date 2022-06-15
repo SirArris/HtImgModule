@@ -1,7 +1,7 @@
 <?php
 namespace HtImgModuleTest\Factory;
 
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use HtImgModule\Factory\FilterManagerFactory;
 use HtImgModule\Options\ModuleOptions;
 use HtImgModule\Imagine\Filter\Loader\FilterLoaderPluginManager;

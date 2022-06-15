@@ -2,7 +2,7 @@
 
 namespace HtImgModuleTest\Factory;
 
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use HtImgModule\Factory\ImagineFactory;
 use HtImgModule\Options\ModuleOptions;
 

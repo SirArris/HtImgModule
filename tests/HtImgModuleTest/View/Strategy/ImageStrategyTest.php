@@ -3,9 +3,9 @@ namespace HtImgModuleTest\View\Strategy;
 
 use HtImgModule\View\Strategy\ImageStrategy;
 use HtImgModule\View\Model\ImageModel;
-use Zend\View\Model\ViewModel;
+use Laminas\View\Model\ViewModel;
 use Imagine\Gd\Imagine;
-use Zend\View\ViewEvent;
+use Laminas\View\ViewEvent;
 
 class ImageStrategyTest extends \PHPUnit_Framework_TestCase
 {

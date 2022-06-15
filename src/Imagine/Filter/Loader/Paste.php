@@ -4,7 +4,7 @@ namespace HtImgModule\Imagine\Filter\Loader;
 use Imagine\Image\ImagineInterface;
 use HtImgModule\Imagine\Filter\Paste as PasteFilter;
 use HtImgModule\Exception;
-use Zend\View\Resolver\ResolverInterface;
+use Laminas\View\Resolver\ResolverInterface;
 
 class Paste implements LoaderInterface
 {

@@ -3,10 +3,10 @@ namespace HtImgModuleTest\Controller;
 
 use HtImgModule\Controller\ImageController;
 use HtImgModule\Exception;
-use Zend\Mvc\MvcEvent;
+use Laminas\Mvc\MvcEvent;
 use Phine\Test\Property;
-use Zend\Mvc\Controller\PluginManager;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\Mvc\Controller\PluginManager;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class ImageControllerTest extends \PHPUnit_Framework_TestCase
 {
@@ -25,7 +25,7 @@ class ImageControllerTest extends \PHPUnit_Framework_TestCase
             $pluginManager = new PluginManager($container);
         }
         $controller->setPluginManager($pluginManager);
-        $paramsPlugin = $this->createMock('Zend\Mvc\Controller\Plugin\Params');
+        $paramsPlugin = $this->createMock('Laminas\Mvc\Controller\Plugin\Params');
         $pluginManager->setService('params', $paramsPlugin);
 
         $paramsPlugin->expects($this->exactly(1))
@@ -62,7 +62,7 @@ class ImageControllerTest extends \PHPUnit_Framework_TestCase
             $pluginManager = new PluginManager($container);
         }
         $controller->setPluginManager($pluginManager);
-        $paramsPlugin = $this->createMock('Zend\Mvc\Controller\Plugin\Params');
+        $paramsPlugin = $this->createMock('Laminas\Mvc\Controller\Plugin\Params');
         $pluginManager->setService('params', $paramsPlugin);
 
         $paramsPlugin->expects($this->exactly(1))
@@ -99,7 +99,7 @@ class ImageControllerTest extends \PHPUnit_Framework_TestCase
             $pluginManager = new PluginManager($container);
         }
         $controller->setPluginManager($pluginManager);
-        $paramsPlugin = $this->createMock('Zend\Mvc\Controller\Plugin\Params');
+        $paramsPlugin = $this->createMock('Laminas\Mvc\Controller\Plugin\Params');
         $pluginManager->setService('params', $paramsPlugin);
 
         $paramsPlugin->expects($this->exactly(1))
@@ -131,15 +131,15 @@ class ImageControllerTest extends \PHPUnit_Framework_TestCase
     {
         $event = new MvcEvent();
         $controller->setEvent($event);
-        $mockRouteMatchClass = 'Zend\Mvc\Router\RouteMatch';
-        if (class_exists(\Zend\Router\RouteMatch::class)) {
-            $mockRouteMatchClass = \Zend\Router\RouteMatch::class;
+        $mockRouteMatchClass = 'Laminas\Mvc\Router\RouteMatch';
+        if (class_exists(\Laminas\Router\RouteMatch::class)) {
+            $mockRouteMatchClass = \Laminas\Router\RouteMatch::class;
         }
         $routeMatch = $this->getMockBuilder($mockRouteMatchClass)
             ->disableOriginalConstructor()
             ->getMock();
         $event->setRouteMatch($routeMatch);
-        $response = $this->createMock('Zend\Http\Response');
+        $response = $this->createMock('Laminas\Http\Response');
         $response->expects($this->once())
             ->method('setStatusCode')
             ->with(404);

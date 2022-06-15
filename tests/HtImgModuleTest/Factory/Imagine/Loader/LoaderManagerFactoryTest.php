@@ -2,7 +2,7 @@
 namespace HtImgModuleTest\Factory\Imagine\Loader;
 
 use HtImgModule\Factory\Imagine\Loader\LoaderManagerFactory;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 class LoaderManagerFactoryTest extends \PHPUnit_Framework_TestCase
 {
@@ -10,7 +10,7 @@ class LoaderManagerFactoryTest extends \PHPUnit_Framework_TestCase
     {
         $serviceManager     = new ServiceManager();
         $filterManager      = $this->createMock('HtImgModule\Imagine\Filter\FilterManagerInterface');
-        $imageLoaders       = $this->createMock('Zend\ServiceManager\ServiceLocatorInterface');
+        $imageLoaders       = $this->createMock('Laminas\ServiceManager\ServiceLocatorInterface');
         $options            = $this->createMock('HtImgModule\Options\ModuleOptions');
         $mimeTypeGuesser    = $this->getMockBuilder('HtImgModule\Binary\MimeTypeGuesser')
             ->disableOriginalConstructor()

@@ -3,7 +3,7 @@ namespace HtImgModuleTest\View\Renderer;
 
 use HtImgModule\View\Renderer\ImageRenderer;
 use HtImgModule\View\Model\ImageModel;
-use Zend\View\Model\ViewModel;
+use Laminas\View\Model\ViewModel;
 
 class ImageRendererTest extends \PHPUnit_Framework_TestCase
 {
@@ -39,6 +39,6 @@ class ImageRendererTest extends \PHPUnit_Framework_TestCase
     public function testSetResolver()
     {
         $renderer = new ImageRenderer();
-        $this->assertEquals($renderer, $renderer->setResolver($this->createMock('Zend\View\Resolver\ResolverInterface')));
+        $this->assertEquals($renderer, $renderer->setResolver($this->createMock('Laminas\View\Resolver\ResolverInterface')));
     }
 }

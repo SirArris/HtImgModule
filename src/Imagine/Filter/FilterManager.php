@@ -4,7 +4,7 @@ namespace HtImgModule\Imagine\Filter;
 use HtImgModule\Exception;
 use HtImgModule\Options\FilterOptionsInterface;
 use Imagine\Image\ImageInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class FilterManager implements FilterManagerInterface
 {

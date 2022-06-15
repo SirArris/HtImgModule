@@ -4,7 +4,7 @@ namespace HtImgModule\Imagine\Loader;
 use HtImgModule\Binary\Binary;
 use HtImgModule\Binary\BinaryInterface;
 use HtImgModule\Exception;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 use HtImgModule\Imagine\Filter\FilterManagerInterface;
 use Symfony\Component\HttpFoundation\File\MimeType\MimeTypeExtensionGuesser;
 use HtImgModule\Binary\MimeTypeGuesser;

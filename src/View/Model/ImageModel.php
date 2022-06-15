@@ -1,7 +1,7 @@
 <?php
 namespace HtImgModule\View\Model;
 
-use Zend\View\Model\ViewModel;
+use Laminas\View\Model\ViewModel;
 use Imagine\Image\ImageInterface;
 use HtImgModule\Exception;
 

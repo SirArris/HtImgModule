@@ -1,8 +1,8 @@
 <?php
 namespace HtImgModule\View\Renderer;
 
-use Zend\View\Renderer\RendererInterface;
-use Zend\View\Resolver\ResolverInterface;
+use Laminas\View\Renderer\RendererInterface;
+use Laminas\View\Resolver\ResolverInterface;
 use HtImgModule\View\Model\ImageModel;
 use HtImgModule\Exception;
 use Imagine\Image\ImageInterface;

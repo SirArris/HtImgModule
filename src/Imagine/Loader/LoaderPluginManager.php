@@ -3,9 +3,9 @@ namespace HtImgModule\Imagine\Loader;
 
 use HtImgModule\Factory\Imagine\Loader\FileSystemLoaderFactory;
 use HtImgModule\Factory\Imagine\Loader\SimpleFileSystemLoaderFactory;
-use Zend\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\AbstractPluginManager;
 use HtImgModule\Exception;
-use Zend\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
 
 class LoaderPluginManager extends AbstractPluginManager
 {

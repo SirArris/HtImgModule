@@ -2,8 +2,8 @@
 namespace HtImgModuleTest\Imagine\Loader;
 
 use HtImgModule\Imagine\Loader\LoaderPluginManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\ServiceManager;
 
 class LoaderPluginManagerTest extends \PHPUnit_Framework_TestCase
 {

@@ -2,9 +2,9 @@
 namespace HtImgModule\View\Strategy;
 
 use HtImgModule\View\Model\ImageModel;
-use Zend\EventManager\EventManagerInterface;
-use Zend\EventManager\ListenerAggregateInterface;
-use Zend\View\ViewEvent;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\EventManager\ListenerAggregateInterface;
+use Laminas\View\ViewEvent;
 use Imagine\Image\ImagineInterface;
 use Imagine\Image\ImageInterface;
 use HtImgModule\Exception;
@@ -13,7 +13,7 @@ use HtImgModule\View\Renderer\ImageRenderer;
 class ImageStrategy implements ListenerAggregateInterface
 {
     /**
-     * @var \Zend\Stdlib\CallbackHandler[]
+     * @var \Laminas\Stdlib\CallbackHandler[]
      */
     protected $listeners = [];
 

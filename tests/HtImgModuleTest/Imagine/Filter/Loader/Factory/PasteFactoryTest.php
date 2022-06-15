@@ -2,7 +2,7 @@
 namespace HtImgModuleTest\Imagine\Filter\Loader\Factory;
 
 use HtImgModule\Imagine\Filter\Loader\Factory\PasteFactory;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use Imagine\Gd\Imagine;
 
 class PasteFactoryTest extends \PHPUnit_Framework_Testcase
@@ -11,8 +11,8 @@ class PasteFactoryTest extends \PHPUnit_Framework_Testcase
     {
         $serviceManager = new ServiceManager;
         $serviceManager->setService('HtImg\Imagine', new Imagine);
-        $serviceManager->setService('HtImg\RelativePathResolver', $this->createMock('Zend\View\Resolver\ResolverInterface'));
-        $loaders = $this->getMockBuilder('Zend\ServiceManager\AbstractPluginManager')
+        $serviceManager->setService('HtImg\RelativePathResolver', $this->createMock('Laminas\View\Resolver\ResolverInterface'));
+        $loaders = $this->getMockBuilder('Laminas\ServiceManager\AbstractPluginManager')
             ->disableOriginalConstructor()
             ->getMock();
         if (!method_exists($serviceManager, 'configure')) {

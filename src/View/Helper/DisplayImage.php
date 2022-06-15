@@ -2,7 +2,7 @@
 
 namespace HtImgModule\View\Helper;
 
-use Zend\View\Helper\AbstractHtmlElement;
+use Laminas\View\Helper\AbstractHtmlElement;
 
 class DisplayImage extends AbstractHtmlElement
 {

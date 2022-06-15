@@ -1,7 +1,7 @@
 <?php
 namespace HtImgModule\Imagine\Resolver;
 
-use Zend\View\Resolver\TemplatePathStack;
+use Laminas\View\Resolver\TemplatePathStack;
 
 class ImagePathStackResolver extends TemplatePathStack implements ResolverInterface
 {}

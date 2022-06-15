@@ -4,7 +4,7 @@ namespace HtImgModuleTest\Imagine\Filter;
 
 use HtImgModule\Options\ModuleOptions;
 use HtImgModule\Imagine\Filter\FilterManager;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 class FilterManagerTest extends \PHPUnit_Framework_TestCase
 {

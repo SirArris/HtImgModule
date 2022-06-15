@@ -1,10 +1,10 @@
 <?php
 namespace HtImgModule\Imagine\Filter\Loader;
 
-use Zend\ServiceManager\AbstractPluginManager;
+use Laminas\ServiceManager\AbstractPluginManager;
 use HtImgModule\Exception;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\Factory\InvokableFactory;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\Factory\InvokableFactory;
 
 class FilterLoaderPluginManager extends AbstractPluginManager
 {

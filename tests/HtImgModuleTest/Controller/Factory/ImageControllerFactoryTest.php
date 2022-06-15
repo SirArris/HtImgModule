@@ -1,9 +1,9 @@
 <?php
 namespace HtImgModuleTest\Controller\Factory;
 
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use HtImgModule\Controller\Factory\ImageControllerFactory;
-use Zend\Mvc\Controller\ControllerManager;
+use Laminas\Mvc\Controller\ControllerManager;
 
 class ImageControllerFactoryTest extends \PHPUnit_Framework_TestCase
 {

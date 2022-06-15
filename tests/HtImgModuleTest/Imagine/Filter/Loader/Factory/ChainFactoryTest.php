@@ -2,7 +2,7 @@
 namespace HtImgModuleTest\Imagine\Filter\Loader\Factory;
 
 use HtImgModule\Imagine\Filter\Loader\Factory\ChainFactory;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 class ChainFactoryTest extends \PHPUnit_Framework_Testcase
 {
@@ -13,7 +13,7 @@ class ChainFactoryTest extends \PHPUnit_Framework_Testcase
             'HtImgModule\Imagine\Filter\Loader\FilterLoaderPluginManager',
             $this->getMockBuilder('HtImgModule\Imagine\Filter\Loader\FilterLoaderPluginManager')->disableOriginalConstructor()->getMock()
         );
-        $loaders = $this->getMockBuilder('Zend\ServiceManager\AbstractPluginManager')
+        $loaders = $this->getMockBuilder('Laminas\ServiceManager\AbstractPluginManager')
             ->disableOriginalConstructor()
             ->getMock();
         if (!method_exists($serviceManager, 'configure')) {

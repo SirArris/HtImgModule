@@ -2,9 +2,9 @@
 namespace HtImgModuleTest\View\Helper;
 
 use HtImgModule\View\Helper\DisplayImage;
-use Zend\ServiceManager\ServiceManager;
-use Zend\View\Renderer\PhpRenderer;
-use Zend\View\HelperPluginManager;
+use Laminas\ServiceManager\ServiceManager;
+use Laminas\View\Renderer\PhpRenderer;
+use Laminas\View\HelperPluginManager;
 
 class DisplayImageTest extends \PHPUnit_Framework_TestCase
 {
@@ -29,7 +29,7 @@ class DisplayImageTest extends \PHPUnit_Framework_TestCase
 
         $renderer->setHelperPluginManager($helpers);
 
-        $doctype = $this->createMock('Zend\View\Helper\Doctype');
+        $doctype = $this->createMock('Laminas\View\Helper\Doctype');
         $doctype->expects($this->once())
             ->method('isXhtml')
             ->will($this->returnValue(true));

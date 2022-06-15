@@ -3,7 +3,7 @@ namespace HtImgModule\Imagine\Filter\Loader;
 
 use HtImgModule\Exception;
 use HtImgModule\Imagine\Filter\Chain as ChainFilter;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 
 class Chain implements LoaderInterface
 {

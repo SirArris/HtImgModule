@@ -3,7 +3,7 @@
 namespace HtImgModuleTest\Imagine\Filter\Loader;
 
 use HtImgModule\Imagine\Filter\Loader\Chain;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 
 class ChainTest extends \PHPUnit_Framework_TestCase
 {

@@ -2,7 +2,7 @@
 namespace HtImgModuleTest\Imagine\Filter\Loader\Factory;
 
 use HtImgModule\Imagine\Filter\Loader\Factory\BackgroundFactory;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use Imagine\Gd\Imagine;
 
 class BackgroundFactoryTest extends \PHPUnit_Framework_Testcase
@@ -11,7 +11,7 @@ class BackgroundFactoryTest extends \PHPUnit_Framework_Testcase
     {
         $serviceManager = new ServiceManager;
         $serviceManager->setService('HtImg\Imagine', new Imagine);
-        $loaders = $this->getMockBuilder('Zend\ServiceManager\AbstractPluginManager')
+        $loaders = $this->getMockBuilder('Laminas\ServiceManager\AbstractPluginManager')
             ->disableOriginalConstructor()
             ->getMock();
         if (!method_exists($serviceManager, 'configure')) {

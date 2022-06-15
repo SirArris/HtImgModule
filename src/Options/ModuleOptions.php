@@ -2,7 +2,7 @@
 namespace HtImgModule\Options;
 
 use HtImgModule\Exception;
-use Zend\Stdlib\AbstractOptions;
+use Laminas\Stdlib\AbstractOptions;
 
 class ModuleOptions extends AbstractOptions implements CacheOptionsInterface, FilterOptionsInterface
 {

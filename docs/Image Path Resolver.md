@@ -1,7 +1,7 @@
 Image Path Resolver
 =========================
 Image resolvers are implementation of `HtImgModule\Imagine\Resolver\ResolverInterface`. Image resolvers are used by `HtImgModule\Imagine\Loader\FileSystemLoader` to resolve images from filesystem .
-Image Path Resolver is similiar to Zend Framework 2 view template resolvers(Actually an extension of `Zend\View\Resolver\ResolverInterface`).
+Image Path Resolver is similiar to Zend Framework 2 view template resolvers(Actually an extension of `Laminas\View\Resolver\ResolverInterface`).
 
 ```php
 return [
@@ -30,7 +30,7 @@ First you need to create resolver class.
 namespace Application\Imagine\Resolver;
 
 use HtImgModule\Imagine\Resolver\ResolverInterface;
-use Zend\View\Renderer\RendererInterface as Renderer;
+use Laminas\View\Renderer\RendererInterface as Renderer;
 
 class MyPathResolver implements ResolverInterface
 {

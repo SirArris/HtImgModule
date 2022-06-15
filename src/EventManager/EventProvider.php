@@ -1,9 +1,9 @@
 <?php
 namespace HtImgModule\EventManager;
 
-use Zend\EventManager\EventManagerAwareInterface;
-use Zend\EventManager\EventManagerInterface;
-use Zend\EventManager\EventManager;
+use Laminas\EventManager\EventManagerAwareInterface;
+use Laminas\EventManager\EventManagerInterface;
+use Laminas\EventManager\EventManager;
 
 abstract class EventProvider implements EventManagerAwareInterface
 {

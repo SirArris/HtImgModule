@@ -2,8 +2,8 @@
 namespace HtImgModuleTest\Imagine\Resolver;
 
 use HtImgModule\Imagine\Resolver\ResolverManager;
-use Zend\ServiceManager\Exception\InvalidServiceException;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\Exception\InvalidServiceException;
+use Laminas\ServiceManager\ServiceManager;
 
 class ResolverManagerTest extends \PHPUnit_Framework_TestCase
 {

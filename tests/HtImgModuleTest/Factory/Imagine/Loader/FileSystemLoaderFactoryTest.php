@@ -1,7 +1,7 @@
 <?php
 namespace HtImgModuleTest\Factory\Imagine\Loader;
 
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\ServiceManager;
 use HtImgModule\Factory\Imagine\Loader\FileSystemLoaderFactory;
 
 class FileSystemLoaderFactoryTest extends \PHPUnit_Framework_TestCase
@@ -12,7 +12,7 @@ class FileSystemLoaderFactoryTest extends \PHPUnit_Framework_TestCase
         $resolver = $this->createMock('HtImgModule\Imagine\Resolver\ResolverInterface');
         $serviceManager->setService('HtImg\RelativePathResolver', $resolver);
         $factory = new FileSystemLoaderFactory();
-        $imageLoaders = $this->getMockBuilder('Zend\ServiceManager\AbstractPluginManager')
+        $imageLoaders = $this->getMockBuilder('Laminas\ServiceManager\AbstractPluginManager')
             ->disableOriginalConstructor()
             ->getMock();
         if (!method_exists($serviceManager, 'configure')) {

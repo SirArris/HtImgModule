@@ -5,10 +5,10 @@ namespace HtImgModule\Imagine\Filter\Loader\Factory;
 use HtImgModule\Imagine\Filter\Loader\FilterLoaderPluginManager;
 use Interop\Container\ContainerInterface;
 use Interop\Container\Exception\ContainerException;
-use Zend\ServiceManager\Exception\ServiceNotCreatedException;
-use Zend\ServiceManager\Exception\ServiceNotFoundException;
-use Zend\ServiceManager\ServiceLocatorInterface;
-use Zend\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
+use Laminas\ServiceManager\Exception\ServiceNotFoundException;
+use Laminas\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\FactoryInterface;
 use HtImgModule\Imagine\Filter\Loader\Chain;
 
 class ChainFactory implements FactoryInterface

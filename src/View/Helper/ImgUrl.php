@@ -2,7 +2,7 @@
 
 namespace HtImgModule\View\Helper;
 
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 use HtImgModule\Service\CacheManagerInterface;
 use HtImgModule\Imagine\Filter\FilterManagerInterface;
 use HtImgModule\Imagine\Loader\LoaderManagerInterface;
